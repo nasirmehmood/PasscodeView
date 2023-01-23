@@ -1,3 +1,10 @@
 # PasscodeView
 
-A description of this package.
+Sample Usage
+
+```
+PasscodeView { passcode in
+    let isValidated = validate(passcode: passcode)
+    return isValidated
+}
+```
