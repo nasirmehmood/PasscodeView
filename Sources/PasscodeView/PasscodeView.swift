@@ -16,6 +16,10 @@ public struct PasscodeView {
     @State var loginAttempts: Int = 0
 
     public var passcodeValidationCallback: ((String) -> Bool)
+    
+    public init(_ callback: @escaping ((String) -> Bool)) {
+        self.passcodeValidationCallback = callback
+    }
 }
 
 // MARK: - View
